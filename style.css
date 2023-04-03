@@ -327,24 +327,15 @@ body {
     height: 40px;
     left: 559px;
     top: 1016px;
-
-    /* Header 2 */
-
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
     font-size: 36px;
-    line-height: 40px;
-    /* identical to box height, or 111% */
-
+    line-height: 1.11px;
     text-align: center;
     letter-spacing: 0.02em;
     text-transform: capitalize;
-
-    /* NAVY BLUE */
-
     color: #2E2F42;
-
 }
 
 
