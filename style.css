@@ -1,21 +1,35 @@
 body {
-    font-family: "Roboto";
+    font-family: "Roboto,sans-serif";
     color: #434455;
     margin: 0 auto;
     width: 1440px;
     position: relative;
+    background-color: #FFFFFF;
 
 }
 
 /* header */
-.header-linc {
-    width: 1440px;
-    height: 72px;
-    left: 0px;
-    top: 0px;
-    position: absolute;
 
 
+.logo {
+
+    height: 21px;
+
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 21px;
+    /* identical to box height, or 117% */
+
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    /* IRIS */
+
+    color: #4D5AE5;
 }
 
 .header-brend {
@@ -23,7 +37,6 @@ body {
     flex-direction: row;
     align-items: center;
     padding: 0px;
-
     position: absolute;
     width: 115px;
     height: 24px;
@@ -336,6 +349,7 @@ body {
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: #2E2F42;
+
 }
 
 
@@ -389,6 +403,7 @@ body {
     top: 1548px;
     background: #F4F4FD;
 }
+
 
 .main-four-section-logo {
     position: absolute;
@@ -553,7 +568,7 @@ Header background, team card background
 }
 
 /* footer */
-.footer-box {
+footer {
     position: absolute;
     width: 1440px;
     height: 312px;
@@ -564,6 +579,10 @@ Header background, team card background
 
     background: #2E2F42;
 }
+
+
+
+
 
 .footer-lick {
     display: flex;
@@ -586,7 +605,7 @@ Header background, team card background
     font-style: normal;
     font-weight: 800;
     font-size: 18px;
-    line-height: 21px;
+    line-height: 1.17;
     /* identical to box height, or 117% */
 
     display: flex;
@@ -614,7 +633,7 @@ Header background, team card background
     font-style: normal;
     font-weight: 800;
     font-size: 18px;
-    line-height: 21px;
+    line-height: 1.17;
     /* identical to box height, or 117% */
 
     display: flex;
@@ -643,7 +662,7 @@ Header background, team card background
 
     /* Body */
 
-    font-family: 'Roboto';
+    font-family: "Raleway";
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
