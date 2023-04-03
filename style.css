@@ -1,48 +1,22 @@
 body {
-    font-family: "Roboto,sans-serif";
+    font-family: "Roboto";
     color: #434455;
     margin: 0 auto;
     width: 1440px;
     position: relative;
-    background-color: #FFFFFF;
 
 }
 
-/* header */
-
-
-.logo {
-
-    height: 21px;
-
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 800;
-    font-size: 18px;
-    line-height: 21px;
-    /* identical to box height, or 117% */
-
+.header-linc {
+    width: 1440px;
+    height: 72px;
     display: flex;
-    align-items: center;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
+    flex-direction: row;
 
-    /* IRIS */
-
-    color: #4D5AE5;
 }
 
 .header-brend {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 0px;
-    position: absolute;
-    width: 115px;
-    height: 24px;
-    left: 156px;
-    top: 24px;
-
+    margin: 24px 0px 24px 156px;
 }
 
 .header-white {
@@ -63,22 +37,11 @@ body {
     color: #4D5AE5;
 }
 
-.menu {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 40px;
-
-    position: absolute;
-    width: 261px;
-    height: 24px;
-    left: 347px;
-    top: 11px;
-    list-style-type: none;
+.header-linc2 {
+    margin: 13px 0px 24px 156px;
 }
 
-.menu li a {
+.header-linc2 li a {
     width: 48px;
     height: 24px;
     font-family: 'Roboto';
@@ -88,25 +51,51 @@ body {
     line-height: 24px;
     letter-spacing: 0.02em;
     color: #2E2F42;
-    text-decoration: none;
 }
 
-/* contact */
-.header-contact a {
-    text-decoration: none;
-    color: #434455;
 
-}
-
-.contact {
+.menu {
+    justify-content: center;
+    list-style: none;
+    display: flex;
+    padding-left: 40px;
     position: absolute;
-    width: 153px;
-    height: 24px;
+}
+
+.menu .link {
+    display: block;
+    text-decoration: none;
+
+
+
+}
+
+.menu a:nth-child(1) {
+    padding-right: 40px;
+}
+
+.menu2 {
+    justify-content: center;
+    list-style: none;
+    display: flex;
+    position: absolute;
     left: 940px;
-    top: 24px;
-    list-style-type: none;
-    /* Body */
+    top: 13px;
+}
 
+.menu2 .link2 {
+    display: block;
+    text-decoration: none;
+
+
+
+}
+
+.menu2 a:nth-child(1) {
+    padding-right: 40px;
+}
+
+.menu2 li a {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -115,457 +104,223 @@ body {
     /* identical to box height, or 150% */
 
     letter-spacing: 0.02em;
-
-    /* SLATE */
-
     color: #434455;
-
 }
 
-.contact-second {
-    position: absolute;
-    width: 151px;
-    height: 24px;
-    left: 1133px;
-    top: 24px;
-
-    /* Body */
-    list-style-type: none;
-
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    /* identical to box height, or 150% */
-
-    letter-spacing: 0.02em;
-
-    /* SLATE */
-
-    color: #434455;
-
-}
-
-/* main-first-section */
-.main-first-section {
-    position: absolute;
-    width: 1440px;
-    height: 600px;
-    left: 0px;
-    top: 72px;
-
-    /* NAVY BLUE */
-
-    background: #2E2F42;
-}
-
-.main-first-section-logo {
-    position: absolute;
-    width: 496px;
-    height: 120px;
-    left: 472px;
-    top: 160px;
-
-    /* Header 1 */
-
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 56px;
-    line-height: 60px;
-    /* or 107% */
-
-    text-align: center;
-    letter-spacing: 0.02em;
-
-    /* WHITE */
-
-    color: #FFFFFF;
-}
-
-.main-first-section-button {
+.menu-button {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    padding: 16px 32px;
-    gap: 10px;
+    padding: 0px;
+    gap: 24px;
 
     position: absolute;
-    width: 175px;
-    height: 56px;
-    left: 636px;
-    top: 356px;
-
-    /* IRIS */
-
-    background: #4D5AE5;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
+    width: 586px;
+    height: 48px;
+    left: 427px;
+    top: 168px;
+    list-style: none;
 }
 
-.main-first-section button {
+.item-bottom {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: fit-content;
+    height: 48px;
+    background: #E7E9FC;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
 
+}
+
+.item-bottom button {
+    background: #E7E9FC;
+    border: 1px solid #E7E9FC;
+    border-radius: 4px;
+    padding: 12px 24px;
+    color: #404BBF;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
-    /* identical to box height, or 150% */
 
-    display: flex;
+
+    /* display: flex; */
     align-items: center;
+    text-align: center;
     letter-spacing: 0.04em;
 
-    /* WHITE */
-
-    color: #FFFFFF;
 
 
 }
 
-/* main-second-section */
-.main-second-section {
+.item-bottom button:hover {
+    background-color: #404BBF;
+    color: #F4F4FD;
+
+}
+
+/* Main flex box 1 */
+
+.main-flex-card1 {
     position: absolute;
     width: 1128px;
-    height: 104px;
-    left: 16px;
-    top: 740px;
-    right: 156px;
-
-
-    /* border: 1px solid#000; */
-
-}
-
-
-
-.second-section-bloc1 {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 8px;
-
-    position: absolute;
-    width: 264px;
-    height: 104px;
+    max-height: 420px;
     left: 156px;
-
-
+    top: 288px;
 }
 
-.second-section-bloc2 {
+.main-flex-box {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 8px;
+    flex-direction: row;
+    gap: 24px;
+    list-style-type: none;
+}
 
-    position: absolute;
-    width: 264px;
-    height: 104px;
-    left: 444px;
-
-
+.box-main {
+    width: 360px;
+    height: 420px;
+    background: #FFFFFF;
+    border: 1px solid #E7E9FC;
 
 }
 
-.second-section-bloc3 {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 8px;
-
-    position: absolute;
-    width: 264px;
-    height: 104px;
-    left: 732px;
-
-
-}
-
-.second-section-bloc4 {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 8px;
-
-    position: absolute;
-    width: 264px;
-    height: 104px;
-    left: 1020px;
-
-
-}
-
-.main-second-section-logo {
+.main-text h2 {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
     line-height: 24px;
-    /* identical to box height, or 120% */
-
     letter-spacing: 0.02em;
-
-    /* NAVY BLUE */
-
+    margin-left: 16px;
     color: #2E2F42;
-
 }
 
-.main-second-section-parahraf {
+.main-text p {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
-    /* or 150% */
-
     letter-spacing: 0.02em;
-
-    /* SLATE */
-
+    margin-left: 16px;
     color: #434455;
 
-}
-
-/* main-thre-section */
-.main-thre-section-logo {
-    position: absolute;
-    width: 333px;
-    height: 40px;
-    left: 559px;
-    top: 1016px;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.11px;
-    text-align: center;
-    letter-spacing: 0.02em;
-    text-transform: capitalize;
-    color: #2E2F42;
 
 }
 
 
 
-.main-thre-section-foto1 {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;
+/* Main flex box 2 */
 
+
+
+
+
+.main-flex-card2 {
     position: absolute;
-    width: 360px;
-    height: 300px;
+    width: 1128px;
+    height: 420px;
     left: 156px;
-    top: 1128px;
-
+    top: 756px;
 }
 
-.main-thre-section-foto2 {
+.main-flex-box2 {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;
+    flex-direction: row;
+    gap: 24px;
+    list-style-type: none;
+}
 
-    position: absolute;
+.box-main {
     width: 360px;
-    height: 300px;
-    left: 540px;
-    top: 1128px;
+    height: 420px;
+    background: #FFFFFF;
+    border: 1px solid #E7E9FC;
+
 }
 
-.main-thre-section-foto3 {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;
-
-    position: absolute;
-    width: 360px;
-    height: 300px;
-    left: 924px;
-    top: 1128px;
-}
-
-/* main-four-section-img */
-.main-four-section-img {
-    position: absolute;
-    width: 1440px;
-    height: 732px;
-    left: 0px;
-    top: 1548px;
-    background: #F4F4FD;
-}
-
-
-.main-four-section-logo {
-    position: absolute;
-    width: 172px;
-    height: 40px;
-    left: 639px;
-    top: 120px;
-
-    /* Header 2 */
-
+.main-text h2 {
     font-family: 'Roboto';
     font-style: normal;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 40px;
-    /* identical to box height, or 111% */
-
-    text-align: center;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
     letter-spacing: 0.02em;
-    text-transform: capitalize;
-
-    /* NAVY BLUE */
-
+    margin-left: 16px;
     color: #2E2F42;
 }
 
-
-.main-four-section-bocs1 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0px 0px 32px;
-    gap: 32px;
-
-    position: absolute;
-    width: 264px;
-    height: 380px;
-    left: 156px;
-    top: 252px;
-
-    /* WHITE
-
-Header background, team card background
-*/
-    background: #FFFFFF;
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-    border-radius: 0px 0px 4px 4px
-}
-
-.main-four-section-bocs2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0px 0px 32px;
-    gap: 32px;
-
-    position: absolute;
-    width: 264px;
-    height: 380px;
-    left: 444px;
-    top: 252px;
-
-    /* WHITE
-
-Header background, team card background
-*/
-    background: #FFFFFF;
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-    border-radius: 0px 0px 4px 4px
-}
-
-.main-four-section-bocs3 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0px 0px 32px;
-    gap: 32px;
-
-    position: absolute;
-    width: 264px;
-    height: 380px;
-    left: 732px;
-    top: 252px;
-
-    /* WHITE
-
-Header background, team card background
-*/
-    background: #FFFFFF;
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-    border-radius: 0px 0px 4px 4px
-}
-
-.main-four-section-bocs4 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0px 0px 32px;
-    gap: 32px;
-
-    position: absolute;
-    width: 264px;
-    height: 380px;
-    left: 1020px;
-    top: 252px;
-
-    /* WHITE
-
-Header background, team card background
-*/
-    background: #FFFFFF;
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-    border-radius: 0px 0px 4px 4px
-}
-
-.main-four-section-second-logo {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0px;
-    gap: 8px;
-
-    width: 232px;
-    height: 56px;
-    flex: none;
-    order: 1;
-    flex-grow: 0;
-
-
-}
-
-.main-four-section-parahraf {
-    width: 144px;
-    height: 14px;
-
-    /* Body */
-
+.main-text p {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
-    /* identical to box height, or 150% */
-
-    text-align: center;
     letter-spacing: 0.02em;
-
-    /* SLATE */
-
+    margin-left: 16px;
     color: #434455;
-    flex: none;
-    order: 1;
-    flex-grow: 0;
-    margin-top: -40px;
 
 
 }
+
+
+/* Main flex box 3 */
+.main-flex-card3 {
+    position: absolute;
+    width: 1128px;
+    height: 420px;
+    left: 156px;
+    top: 1224px;
+}
+
+.main-flex-box3 {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    list-style-type: none;
+}
+
+.box-main {
+    width: 360px;
+    height: 420px;
+    background: #FFFFFF;
+    border: 1px solid #E7E9FC;
+
+}
+
+
+
+
+
+
+
+.main-flex-card2 {
+    position: absolute;
+    width: 1128px;
+    height: 420px;
+    left: 156px;
+    top: 756px;
+}
+
+.main-flex-card3 {
+    position: absolute;
+    width: 1128px;
+    height: 420px;
+    left: 156px;
+    top: 1224px;
+
+}
+
+
+
+
+
+
+
+
 
 /* footer */
 footer {
@@ -577,9 +332,12 @@ footer {
 
     /* NAVY BLUE */
 
-    background: #2E2F42;
+
 }
 
+.dec-box {
+    background: #2E2F42;
+}
 
 
 
